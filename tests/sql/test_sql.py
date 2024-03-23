@@ -10,7 +10,7 @@ from qa_challenge.constants import SQL_FOLDER
 
 class TestSql:
     @pytest.mark.parametrize(
-        "query_name", ["most_interacted_videos_per_country"]
+        "query_name", ["most_interacted_videos_per_country", "avg_age_by_gender"]
     )
     def test_avg_user_consumption(
         self, query_name: str, assets_folder: Path, db: duckdb.DuckDBPyConnection
