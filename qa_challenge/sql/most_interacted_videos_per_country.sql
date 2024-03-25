@@ -16,5 +16,5 @@ select country_code,
     video_id,
     total_interactions
 from _ranking
-where _ranking_no >= 2
+where _ranking_no = 1
 order by country_code
